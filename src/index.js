@@ -1,1 +1,1 @@
-console.log("app react");
+console.log('app react')
