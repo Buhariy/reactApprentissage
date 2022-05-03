@@ -1,16 +1,17 @@
-import bonjour, {
-  calculateAverage,
-  displayNotes,
-  student,
-} from './exos/revision/revision'
-import bonjour2, { displayStudentName } from './exos/revision/revision'
-import { displayStudentNameC } from './exos/revision/correction.js'
-console.log(bonjour('john'))
-console.log(bonjour2('bonjr2'))
-console.log(displayStudentName())
-console.log(displayNotes())
-//console.log(calculateAverage(student.notes))
+import React from 'react'
+import { render } from 'react-dom'
 
-//correction
-console.log(displayStudentNameC(student))
-console.log(calculateAverage(student.notes))
+const notes = [12, 3, 17, 2, 14]
+
+const html = (
+  <div>
+    <h1>Vos notes</h1>
+    <ul>
+      {notes.map((note, index) => (
+        <li key={`note-${index}`}> {note}/20</li>
+      ))}
+    </ul>
+  </div>
+)
+const div = document.querySelector('#root')
+render(html, div)
