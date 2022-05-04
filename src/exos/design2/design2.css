@@ -1,0 +1,8 @@
+.categorie{
+    width: 1500px;
+    height: 150px;
+    background-color: #bb78bc;
+    border : solid 2px #a8b6d8;
+    border-radius: 20px;
+    margin: 20px 0px;
+}

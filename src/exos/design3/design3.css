@@ -1,0 +1,9 @@
+.cercle {
+    background-color: #999797;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: #999797;
+    border: 3px solid #577586;
+    margin: 5px 10px;
+}
